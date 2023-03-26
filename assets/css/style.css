@@ -241,12 +241,8 @@ the website, in dark theme
   
 #user-button{
   font-size: 36px;
-}  
-  
-}
-.ri-user-3-fill{
   color: var(--first-color-lighten);
-}
+}  
 
 @media screen and (max-width: 767px){
   .nav__menu{
