@@ -238,6 +238,11 @@ the website, in dark theme
   display: inline-flex;
   font-size: 1.25rem;
   cursor: pointer;
+  
+#user-button{
+  font-size: 36px;
+}  
+  
 }
 .ri-user-3-fill{
   color: var(--first-color-lighten);
