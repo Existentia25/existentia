@@ -238,9 +238,9 @@ the website, in dark theme
   display: inline-flex;
   font-size: 1.25rem;
   cursor: pointer;
-  
+}
 #user-button{
-  font-size: 36px;
+  font-size: var(--h2-font-size);
   color: var(--first-color-lighten);
 }  
 
@@ -888,7 +888,7 @@ the website, in dark theme
   font-size: 1.15rem;
 }
 
-.blog__button:hover{
+.ri-heart-fill:hover{
   background-color: darkred;
 }
 
