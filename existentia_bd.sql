@@ -25,7 +25,7 @@ CREATE TABLE products(
                       category_en VARCHAR(255) NOT NULL,
                       category_pt VARCHAR(255) NOT NULL,
                       price DECIMAL(10,2) NOT NULL,
-                      photo VARCHAR(255) NOT NULL,
+                      picture VARCHAR(255) NOT NULL,
                       alt_en VARCHAR(255) NOT NULL,
                       alt_pt VARCHAR(255) NOT NULL
 );
@@ -37,7 +37,7 @@ CREATE TABLE carts(
                       name_pt VARCHAR(255) NOT NULL,
                       price DECIMAL(10,2) NOT NULL,
                       quantity INT NOT NULL,
-                      image VARCHAR(255) NOT NULL,
+                      picture VARCHAR(255) NOT NULL,
                       alt_en VARCHAR(255) NOT NULL,
                       alt_pt VARCHAR(255) NOT NULL,
                       CONSTRAINT FK_USER FOREIGN KEY (user_id) REFERENCES users(user_id)
@@ -67,7 +67,7 @@ CREATE TABLE blogs(
                        category_pt VARCHAR(255) NOT NULL,
                        author VARCHAR(255) NOT NULL,
                        date DATETIME NOT NULL,
-                       photo VARCHAR(255) NOT NULL,
+                       picture VARCHAR(255) NOT NULL,
                        alt_en VARCHAR(255) NOT NULL,
                        alt_pt VARCHAR(255) NOT NULL
 
