@@ -134,6 +134,23 @@ section{
 .sec-03{
   margin-bottom: 100px;
 }
+@media screen and (max-width:768px){
+  section{
+    padding: 10rem 0 0 0;
+  }
+  image{
+    width: 100%;
+  }
+  container{
+    padding: 0 1.25rem;
+  }
+  h2{
+    text-align:center;
+  }
+  }
+  
+
+
      
 
 
