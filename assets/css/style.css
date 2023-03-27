@@ -888,8 +888,8 @@ the website, in dark theme
   font-size: 1.15rem;
 }
 
-.ri-heart-fill:hover{
-  background-color: darkred;
+.heart:hover i {
+  color: red;
 }
 
 .blog__circle{
