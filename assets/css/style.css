@@ -524,6 +524,7 @@ the website, in dark theme
     position: relative;
     border: solid var(--first-color) 1px;
     border-radius: .5rem;
+    padding : 3rem 0;
   }
   .product__card ul li{
     list-style-type: disc;
@@ -571,16 +572,7 @@ the website, in dark theme
     background-color: var(--first-color-alt);
   }
   
-  .product__circle{
-    width: 90px;
-    height: 90px;
-    background-color: var(--first-color-lighten);
-    border-radius: 50%;
-    position: absolute;
-    top: 18%;
-    left: 5%;
-  }
-  
+
   .product__card:hover .product__img{
     transform: translateY(-.5rem);
   }
