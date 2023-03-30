@@ -41,7 +41,7 @@ body{
 .main-header p {
   font-size: 1rem;
 }
-  nav{
+nav{
   width: 1036px;
   padding-right: 12rem;
 }
@@ -127,6 +127,13 @@ h3{
 
 .card > div {
   padding: 2rem;
+}
+
+.contain img{
+  height: 22rem !important;
+}
+.card p{
+  text-align: justify;
 }
 
 .btn{
