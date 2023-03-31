@@ -879,19 +879,15 @@ the website, in dark theme
   border-radius: .35rem;
   font-size: 1.15rem;
 }
+.heart i{
+  position: absolute;
+  right: .50rem;
+  bottom: .50rem;
+  color: var(--first-color);
+}
 
 .heart:hover i {
   color: red;
-}
-
-.blog__circle{
-  width: 90px;
-  height: 90px;
-  background-color: var(--first-color);
-  border-radius: 50%;
-  position: absolute;
-  top: 18%;
-  left: 5%;
 }
 
 .blog__card:hover .blog__img{
