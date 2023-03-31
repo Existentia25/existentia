@@ -868,16 +868,22 @@ the website, in dark theme
 .blog__article{
   color: var(--title-color);
 }
-.heart{
-  color: var(--first-color);
-  font-size: var(--h1-font-size);
+.blog__button{
+  position: absolute;
+  right: .50rem;
+  bottom: .50rem;
+  background: var(--first-color);;
+  color: #FFF;
+  padding: .25rem;
+  border-radius: .35rem;
+  font-size: 1.15rem;
 }
-.heart i{
+.heart{
   position: absolute;
   right: .50rem;
   bottom: .50rem;
   color: var(--first-color);
-
+}
 .heart i:hover {
   color: red;
 }
