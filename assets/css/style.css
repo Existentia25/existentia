@@ -879,7 +879,7 @@ the website, in dark theme
   border-radius: .35rem;
   font-size: 1.15rem;
 }
-.heart i{
+.heart{
   position: absolute;
   right: .50rem;
   bottom: .50rem;
