@@ -866,7 +866,7 @@ the website, in dark theme
   text-transform: uppercase;
 }
 .blog__article{
-  color: var(--title-color);
+  color: var(--first-color);
 }
 .blog__button{
   position: absolute;
