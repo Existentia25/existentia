@@ -966,7 +966,7 @@ the website, in dark theme
 .profile-desc span:nth-child(1){
   font-size: 24px;
   font-weight: var(--h3-font-size);
-  color: var(--first-color-alt);
+  color: var(--first-color);
 }
 .profile-desc span:nth-child(2) {
   font-size: 15px;
