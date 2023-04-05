@@ -67,7 +67,7 @@
                     <!-- Theme change button -->
                     <a href="" ><i class="ri-user-3-fill" id="user-button"></i></a>
                     <i class="ri-moon-line change-theme" id="theme-button"></i>
-                    <a href="index.html" ><img src="assets/img/royaume-uni.png" alt="" style="width: 30px; margin-left: 25px;"></a>
+                    <a href="index.html" ><img src="assets/img/royaume-uni.png" alt="" style="width: 30px;"></a>
 
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="ri-menu-line"></i>
@@ -586,40 +586,39 @@
                 <h2 class="section__title-center">Confira nosso blog</h2>
               
                 <div class="blog__container">
-            <article class="blog__card">
+                <article class="blog__card">
                     <img src="assets/img/about_mozambique.jpeg" alt="" class="blog__img">
                     <h3 class="blog__title">Título</h3>
                     <p class="blog__author">Nome do autor</p>
                     <p class="blog__date">Data da publicação</p>
-                    <p class="blog__categorie">Categoria</p>
-                    <div class="heart">
+                    <p class="blog__categorie">Categoria</p><br>
+                    <div class="heart"style="padding-right: 16px;">
                         <a href="" target=""_blank class="blog__article">consulte Mais informação</a>
-                            <i class="ri-heart-fill"></i> </span>
+                    <i class="ri-heart-fill"></i>
                     </div>
+                
             </article>
             <article class="blog__card">
                     <img src="assets/img/about_mozambique.jpeg" alt="" class="blog__img">
                     <h3 class="blog__title">Título</h3>
                     <p class="blog__author">Nome do autor</p>
                     <p class="blog__date">Data da publicação</p>
-                    <p class="blog__categorie">Categoria</p>
-                    <div class="heart">
+                    <p class="blog__categorie">Categoria</p><br>
+                    <div class="heart"style="padding-right: 16px;">
                         <a href="" target=""_blank class="blog__article">consulte Mais informação</a>
-                    <span><i class="ri-heart-fill"></i> </span>
+                    <i class="ri-heart-fill"></i>
 
                     </div>
             </article>
             <article class="blog__card">
-              
                     <img src="assets/img/about_mozambique.jpeg" alt="" class="blog__img">
                     <h3 class="blog__title">Título</h3>
                     <p class="blog__author">Nome do autor</p>
                     <p class="blog__date">Data da publicação</p>
-                    <p class="blog__categorie">Categoria</p>
-                    <div class="heart">
+                    <p class="blog__categorie">Categoria</p><br>
+                    <div class="heart"style="padding-right: 16px;">
                         <a href="" target=""_blank class="blog__article">consulte Mais informação</a>
-                            <i class="ri-heart-fill"></i> </span>
-
+                    <i class="ri-heart-fill"></i> </span>
                     </div>
             </article>
                 </div>
@@ -861,8 +860,8 @@
 
 
             <!--==================== CONTACT ====================-->
-            <section class="contact section container" id="contact">                
-                <div class="contact__container grid">
+            <section class="contact section" id="contact">
+                <div class="contact__container container grid">
                     <div class="contact__box">
                         <h2 class="section__title">
                             Entre em contato conosco hoje através de qualquer um dos dados em formação
@@ -872,17 +871,23 @@
                             <div class="contact__information">
                                 <h3 class="contact__subtitle">Ligue para nós para suporte instantâneo</h3>
                                 <span class="contact__description">
-                                    <i class="ri-phone-line contact__icon"></i>
-                                    +258 84 294 5714 <br>
-                                    +33 6 46 92 48 91
-                                </span>
+                                    <i class="ri-whatsapp-line contact__icon"></i>
+                                    <a href="https://wa.me/258842945714" target="_blank">
+                                        +258 84 294 5714 </a>
+                                   </span>
+                                <span><br><a href="https://wa.me/33646924891" target="_blank">
+                                +33 6 46 92 48 91 </a>
+                                    </span>
+
+
                             </div>
+
 
                             <div class="contact__information">
                                 <h3 class="contact__subtitle">Escreva-nos por correio</h3>
                                 <span class="contact__description">
                                     <i class="ri-mail-line contact__icon"></i>
-                                    user@email.com
+                                    <a href="mailto:email@example.com">user@email.com</a>
                                 </span>
                             </div>
                         </div>
@@ -891,26 +896,30 @@
                     <form action="" class="contact__form">
                         <div class="contact__inputs">
                             <div class="contact__content">
-                                <input type="email" id="email" class="contact__input">
+                                <input type="text" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Name</label>
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="email" placeholder=" " class="contact__input">
                                 <label for="" class="contact__label">Email</label>
                             </div>
 
                             <div class="contact__content">
-                                <input type="text" id="subject" class="contact__input">
-                                <label for="" class="contact__label">Sujeito</label>
+                                <input type="text" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Subject</label>
                             </div>
-
+                            
                             <div class="contact__content contact__area">
-                                <textarea name="message" id="message" class="contact__input"></textarea>                              
-                                <label for="" class="contact__label">Mensagem</label>
+                                <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                                <label for="" class="contact__label">Message</label>
                             </div>
                         </div>
 
-                        <input type="submit" class="button button--flex" onclick="whatsapp()" value="Enviar mensagem">
-                        <!-- <button class="button button--flex">
+                        <button class="button button--flex">
                             Send Message
                             <i class="ri-arrow-right-up-line button__icon"></i>
-                        </button> -->
+                        </button>
                     </form>
                 </div>
             </section>
