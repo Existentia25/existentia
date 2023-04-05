@@ -1,0 +1,42 @@
+.home{
+    background: bottom / cover no-repeat url(../img/blog-image.jpg) 
+}
+.home__title{
+    color: var(--container-color);
+}
+
+.blog__card{
+    padding : 0 !important;
+}
+.blog__description{
+    display: contents !important;
+    text-align: center;
+    color: var(--container-color);
+}
+
+.blog__author{
+    display: flex;
+    justify-content: space-evenly;
+}
+.blog__content{
+    text-align: justify !important;
+    padding: var(--mb-1);
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.pagination__number{
+    display: flex;
+    padding: 6px !important;
+    text-decoration: none;
+}
+.pagination__number a{
+    margin: 0 1rem 3rem;
+    color: var(--text-color);
+}
+.pagination__number a:hover{
+    color: var(--first-color);
+}
+
