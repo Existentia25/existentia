@@ -1,0 +1,71 @@
+/*============================= header blog =================*/
+
+.header__content {
+    background-color: var(--text-color);
+    padding: 25px;
+    text-align: center;
+  
+  }
+
+/*========================  sibare ============================*/
+.sidebar ul li a{
+    display:block;
+    color:black;
+    line-height: 60px;
+    padding-left: 49px;
+
+}
+
+.sidebar ul li a:hover{
+   color: var(--first-color);
+    border-left: 10px solid black;
+    transition: .5s;
+    background-color: var(--text-color);
+    background: var(--text-color);
+    counter-reset: black;
+}
+.sidebar{
+    float: right;
+    width: 25%;
+    margin-top: -400px;
+    text-align: center;
+  
+}
+.content {
+    margin-right: 25%;
+}
+
+/* Style de la barre latérale pour les écrans de 320px ou moins */
+@media (max-width: 320px) {
+    .sidebar {
+      width: 100%;
+      float: none;
+      margin-top: 0;
+    }
+    
+    .sidebar ul li a {
+      padding-left: 20px;
+    }
+    .heart{
+        padding-right: 26px;
+    }
+  }
+  
+  /* Style de la barre latérale pour les écrans de 768px ou moins */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      float: none;
+      margin-top: 0;
+    }
+    
+    .sidebar ul li a {
+      padding-left: 20px;
+    }
+    .heart{
+        padding-right: 0;
+    }
+    .blog_container{
+        padding-top: 140px;
+    }
+  }
