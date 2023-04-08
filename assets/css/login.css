@@ -12,17 +12,18 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(../img/home-img.jpeg);
+    background: center / contain no-repeat url(../img/home-img.jpeg);
 }
 nav{
-    width: 1236px;
-    padding-right: 12rem;
     display: flex;
+    width: 1440px;
+    padding-right: 12rem;
     justify-content: space-between;
     padding-right: 0;
 }
 .nav__button{
-    width: 200px !important;
+    display: inline-flex;
+    width: 215px !important;
     color: #d3ad7f;
     background: rgba(255, 255, 255, .3); 
     font-size: 1.1rem;
@@ -74,7 +75,7 @@ nav{
 }
 h2{
     font-size: 30px;
-    color: #fff;
+    color: #d3ad7f;
     text-align: center;   
 }
 .input-group{
@@ -118,7 +119,7 @@ h2{
 }
 button{
     position: relative;
-    width: 100px;
+    width: 120px;
     height: 40px;
     background: #d3ad7f;
     font-size: 16px;
@@ -144,9 +145,3 @@ button{
 .signUp-link p a:hover{
     text-decoration: underline;
 }
-
-
-
-
-
-
