@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: center / contain no-repeat url(../img/home-img.jpeg);
+    background: center / cover no-repeat url(../img/home-img.jpeg);
 }
 nav{
     display: flex;
