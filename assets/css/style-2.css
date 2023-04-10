@@ -1,0 +1,37 @@
+.articles{
+    margin-top: 30px;
+  }
+
+  .articles .article{
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+.articles .article .left img{
+      height: 300px;
+      width: 500px;
+}
+
+.articles .article .right{
+    margin-top: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.articles .article .down{
+    
+}
+    
+
+.articles .article .right p.date{
+    color: var(--title-color);
+}
+
+.articles .article .right p.description{
+    color:var(--first-color-dark); ;
+}
+
+.articles .article .botom h3{
+    text-align:justify;
+}
+ 
