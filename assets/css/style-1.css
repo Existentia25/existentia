@@ -1,0 +1,53 @@
+/* For Page 404*/
+body{
+    background: #141414;
+  }
+  span{
+    font-size: 20em;
+    font-weight: 800;
+    color: #a08b64; ;
+    font-family: cursive;
+    
+  }
+  div{
+    display: flex;
+    flex-direction: row;
+  }
+  .number1{
+    -webkit-animation: 2s anime1 infinite;
+    animation: 2s anime1 infinite;
+  }
+  .number2{
+    -webkit-animation: 2s anime2 infinite;
+    animation: 2s anime2 infinite;
+  }
+  .number3{
+    -webkit-animation: 2s anime3 infinite;
+    animation: 2s anime3 infinite;
+  }
+  .btn-style{
+    border: 2px solid white;
+    border-radius: 0;
+    padding: 10px 50px;
+  }
+  @-webkit-keyframes anime1{
+    20%{-webkit-transform: translateY(-40px);transform: translateY(-40px)}
+    40%{-webkit-transform: translateY(40px);transform: translateY(40px)}
+  }
+  @keyframes anime1{
+    20%{-webkit-transform: translateY(-40px);transform: translateY(-40px);}
+    40%{-webkit-transform: translateY(40px);transform: translateY(40px);}
+  }
+
+  @keyframes anime2{
+    40%{-webkit-transform: translateY(-40px);transform: translateY(-40px);}
+    60%{-webkit-transform: translateY(40px);transform: translateY(40px);}
+  }
+  
+  @keyframes anime3{
+    60%{-webkit-transform: translateY(-40px);transform: translateY(-40px);}
+    80%{-webkit-transform: translateY(40px);transform: translateY(40px);}
+  }
+
+
+  
