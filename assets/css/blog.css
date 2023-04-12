@@ -53,6 +53,7 @@
     margin-right: 25%;
 }
 
+
 /* Style de la barre latérale pour les écrans de 320px ou moins */
 @media screen and (max-width: 320px) {
   
@@ -82,6 +83,10 @@
 .sidebar__title{
   padding-left: 35px;
 }
+.nav__logo{
+  width: 225px;
+  padding-left: 85px;
+ }
 }
   /* Style de la barre latérale pour les écrans de 768px & 1024px */
   @media screen and (min-width: 768px) and (max-width: 1024px)  {
