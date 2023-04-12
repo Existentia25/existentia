@@ -3,13 +3,13 @@ body{
     background: #141414;
   }
   span{
-    font-size: 20em;
+    font-size: calc(50px + 20vw);
     font-weight: 800;
     color: #a08b64; ;
     font-family: cursive;
     
   }
-  div{
+  .row{
     display: flex;
     flex-direction: row;
   }
@@ -29,6 +29,9 @@ body{
     border: 2px solid white;
     border-radius: 0;
     padding: 10px 50px;
+  }
+  h2{
+    font-size: calc(20px + 10vw);
   }
   @-webkit-keyframes anime1{
     20%{-webkit-transform: translateY(-40px);transform: translateY(-40px)}
