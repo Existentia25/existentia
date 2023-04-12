@@ -136,8 +136,8 @@
     .nav__logo{
       width: 225px;
      padding-left: 85px;
-     display: none;
     }
+    
     .sidebar__list {
       display: flex;
       flex-direction: row;
