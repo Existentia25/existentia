@@ -37,6 +37,23 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
+/*=============== GALLERY ===============*/
+const divs = document.querySelectorAll('.gallery-wrapper div');
+const fullscreenView = document.querySelector('.image-view');
+const cancelBtn = document.getElementById('cancel-btn');
+
+divs.forEach(function(BG, idx){
+    BG.addEventListener('click', function(){
+        fullscreenView.style.display = "block";
+
+        fullscreenView.style.background = `url(assets/img/image${idx + 1}.jpg) center/ cover no-repeat`;
+    })
+})
+
+cancelBtn.addEventListener('click', function(){
+    fullscreenView.style.display = "none";
+})
+
 /*=============== QUESTIONS ACCORDION ===============*/
 const accordionItems = document.querySelectorAll('.questions__item')
 
@@ -66,41 +83,7 @@ const toggleItem = (item) =>{
     }
 
 }
-/*=============== GALLERY ===============*/
-const divs = document.querySelectorAll('.gallery-wrapper div');
-const fullscreenView = document.querySelector('.image-view');
-const cancelBtn = document.getElementById('cancel-btn');
 
-divs.forEach(function(BG, idx){
-    BG.addEventListener('click', function(){
-        fullscreenView.style.display = "block";
-
-        fullscreenView.style.background = `url(assets/img/image${idx + 1}.jpg) center/ cover no-repeat`;
-    })
-})
-
-cancelBtn.addEventListener('click', function(){
-    fullscreenView.style.display = "none";
-})
-/*=============== TESTIMONIAL===============*/
-$('.testimonials-container').owlCarousel({
-    loop:true,
-    autoplay:true,
-    autoplayTimeout:4000,
-    margin:10,
-    nav:true,
-    navText:["<i class='ri-arrow-left-line'></i>",
-             "<i class='ri-arrow-right-line'></i>"],
-    responsive:{
-        0:{
-            items:1
-        },
-        768:{
-            items:2
-        },
-
-    }
-})
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 $('.testimonials-container').owlCarousel({
@@ -190,6 +173,6 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data`)
 sr.reveal(`.home__img`, {delay: 500})
 sr.reveal(`.home__social`, {delay: 600})
-sr.reveal(`.about__img, .contact__box`,{origin: 'left'})
-sr.reveal(`.about__data, .contact__form`,{origin: 'right'})
+sr.reveal(`.about__img, .contact__box,.sidebar`,{origin: 'left'})
+sr.reveal(`.about__data, .contact__form, .gallery,.sidebar`,{origin: 'right'})
 sr.reveal(`.steps__card, .product__card, .questions__group, .blog__card, .footer`,{interval: 100})
