@@ -1,30 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="assets/css/style-2.css">
-</head>
-<body>
-    <section class="articles">
-        <h2 class="blog__title"><strong>Article</strong> </h2>
-          <div class="article">
-            <div class="left">
-            <a href="#" target="_blank"><img src="assets/img/about_mozambique.jpeg" alt="" class="blog__img"></a>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== OWL CAROUSEL LINKS ===============-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+
+       <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/blog.css">
+
+        <title>Existentia || CONCIERGE AND LIFESTYLE SERVICES</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo_navbar.png" alt="" style="width: 150px;">
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Products</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#gallery" class="nav__link">Gallery</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#faqs" class="nav__link">FAQs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#blog" class="nav__link">Blog</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns" id="nav_screem">
+
+                    <!-- Theme change button -->
+                    <a href="" ><i class="ri-user-3-fill" id="user-button"></i></a>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    <a href="blog_index_port.html" ><img src="assets/img/portugal.png" alt="" style="width: 30px;"></a>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+            </header>
+
+        <main class="main">
+            <!--====================================== header =================================-->
+ <section class="header_blog">
+            <div class="header__content">
+                <h1 class="header__title"><img src="assets/img/logo_navbar.png" alt="" style="width: 150px;"></h1>
+                <h2 class="header__subtitle" style="color:whitesmoke">Articles</h2>
             </div>
-            <div class="right">
-            <p class="blog__date"><time datetime="2023-00-00">Date<br></time></p>
-            <p class="blog__auteur">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;
-                &emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp; Auteur </p>
-            </div>
-            <div class="down">
-            <h3>Titre</h3>
-            <p>Article</p>
-            </div>
-          </div>
-            
+ </section>
+        
+    <section class="blog section container" id="blog">
+            <h2 class="section__title-center">Article</h2>
           
+            <div class="blog__container">
+                <article class="blog__article">
+                    <div>
+                     <img src="assets/img/about_mozambique.jpeg" alt="" class="blog__img">
+                    </div>
+                        
+                        <span class="blog__author">Author Name</span>
+                        <span class="blog__date">Date of publication</span>
+                        
+                        <h3 class="blog__title">Title</h3>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum porro deleniti ut. Amet atque quisquam temporibus corporis maxime? Saepe corrupti veritatis asperiores, 
+                        et cumque repellendus eveniet? Sed est adipisci natus.</P>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum porro deleniti ut. Amet atque quisquam temporibus corporis maxime? Saepe corrupti veritatis asperiores, 
+                        et cumque repellendus eveniet? Sed est adipisci natus.</P>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum porro deleniti ut. Amet atque quisquam temporibus corporis maxime? Saepe corrupti veritatis asperiores, 
+                        et cumque repellendus eveniet? Sed est adipisci natus.</P>
+
+                       
+                        <div class="heart">
+                            <i class="ri-heart-fill"></i>
+                        </div>
+                </article>
+           </div>
     </section>
-</body>
+    <section class="sidebar_container">
+        <aside class="sidebar">
+            <h2 class="sidebar__title">Category</h2>
+            <ul class="sidebar__list">
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Voyages</a></li>
+              <li><a href="#">Articles</a></li>
+            </ul>
+        </aside>
+    </section>
+    </main>
+
+            <!--==================== FOOTER ====================-->
+            <footer class="footer section">
+                <div class="footer__container container grid">
+                    <div class="footer__content">
+                        <a href="#" class="footer__logo">
+                            <img src="assets/img/logo_navbar.png" alt="" style="width: 150px;">
+                        </a>
+    
+                        <h3 class="footer__title">
+                            Subscribe to our newsletter <br> to stay update
+                        </h3>
+    
+                        <div class="footer__subscribe">
+                            <input type="email" placeholder="Enter your email" class="footer__input">
+    
+                            <button class="button button--flex footer__button">
+                                Subscribe
+                                <i class="ri-arrow-right-up-line button__icon"></i>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="footer__content">
+                        <h3 class="footer__title">Our Address</h3>
+    
+                        <ul class="footer__data">
+                            <li class="footer__information">77 Rua Valentim Siti</li>
+                            <li class="footer__information">Maputo - code postal</li>
+                            <li class="footer__information">Mozambique</li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__content">
+                        <h3 class="footer__title">Contact Us</h3>
+    
+                        <ul class="footer__data">
+                            <li class="footer__information">+258 84 294 5714 <br> +33 6 46 92 48 91 <br> user@email.com</li>
+                            
+                            <div class="footer__social">
+                                <a href="https://www.facebook.com/" class="footer__social-link">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                                <a href="https://www.instagram.com/" class="footer__social-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <a href="https://twitter.com/" class="footer__social-link">
+                                    <i class="ri-whatsapp-fill"></i>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__content">
+                        <h3 class="footer__title">
+                            We accept all credit cards
+                        </h3>
+    
+                        <div class="footer__cards">
+                            <img src="assets/img/card1.png" alt="" class="footer__card">
+                            <img src="assets/img/card2.png" alt="" class="footer__card">
+                            <img src="assets/img/card3.png" alt="" class="footer__card">
+                            <img src="assets/img/card4.png" alt="" class="footer__card">
+                        </div>
+                    </div>
+                </div>
+    
+                <p class="footer__copy">&#169; A-TEAM Développement. All rigths reserved</p>
+            </footer>
+    
+            <!-- link whatsapp -->
+    
+            <div class="whatsapp_float">
+                <a href="https://wa.me/33646924891" target="_blank"><img src="assets/img/logo_whatsapp.png"  alt="" width="50px" class="whatsapp_float_btn"></a>
+            </div>
+            
+        <!--=============== JQUERY LINK ===============-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!--=============== OWL CAROUSEL SCRIPT LINK ===============-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        </body>
+        
 </html>
