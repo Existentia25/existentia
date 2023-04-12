@@ -145,7 +145,8 @@ the website, in dark theme
 .dark-theme .testimonial-card .test-card-body,
 .dark-theme .questions,
 .dark-theme .contact,
-.dark-theme .main__content
+.dark-theme .main__content,
+.dark-theme .header__
 {
   background-color: var(--first-color-dark);
 }
@@ -390,14 +391,7 @@ the website, in dark theme
 .home__social-link:hover{
   transform: translateX(.25rem);
 }
-/*============================= header blog =================*/
 
-.header__content {
-  background-color: #262c29;
-  padding: 50px;
-  text-align: center;
-
-}
 
 
 /*=============== BUTTONS ===============*/
@@ -896,6 +890,7 @@ the website, in dark theme
 }
 .blog__article{
   color: var(--first-color);
+  padding-top: 15px;
 }
 .blog__button{
   position: absolute;
@@ -912,7 +907,7 @@ the website, in dark theme
   right: .50rem;
   bottom: .50rem;
   color: var(--first-color);
-  padding-right: 59px;
+  padding-right: 20px;
 }
 .heart i:hover {
   color: red;
@@ -1306,12 +1301,16 @@ the website, in dark theme
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
   }
 
   .blog__card{
     width: 100%;
     display: grid;
     position: relative;
+  }
+  .nav__btns{
+    margin-right: 0px;
   }
 }
 
