@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer</title>
-</head>
-<body>
    <!--==================== FOOTER ====================-->
 <footer class="footer section">
             <div class="footer__container container grid">
@@ -75,5 +66,3 @@
 
             <p class="footer__copy">&#169; A-TEAM Développement. All rigths reserved</p>
         </footer> 
-</body>
-</html>
