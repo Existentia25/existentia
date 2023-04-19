@@ -71,7 +71,7 @@ if (isset($_POST["about_title_en"], $_POST["about_title_pt"], $_POST["about_cont
         $sql = "INSERT INTO about (about_title_en, about_title_pt, about_content_en, about_content_pt, about_img_alt_en, about_img_alt_pt, about_button, about_button_href_en, about_button_href_pt, about_img) VALUES(?,?,?,?,?,?,?,?,?,?)"; // Préparation de la requête d'insertion pour ajouter une nouvelle entrée à la table "about"
         $stmt = $cnn->prepare($sql); // Préparation de la requête avec la commande "prepare"
         $stmt->execute([$about_title_en, $about_title_pt, $about_content_en, $about_content_pt, $about_img_alt_en, $about_img_alt_pt, $about_button, $about_button_href_en, $about_button_href_pt, $file_dest]); // Exécution de la requête avec les valeurs fournies dans un tableau sous forme de paramètres
-        header('location:admin_about.php'); // Redirection de l'utilisateur vers la page "admin_about.php"
+        header('location:admin_about2.php'); // Redirection de l'utilisateur vers la page "admin_about.php"
     }
 }
 ?>
@@ -129,7 +129,8 @@ if (isset($_POST["about_title_en"], $_POST["about_title_pt"], $_POST["about_cont
 
         //affichage des résultats
         while ($row = $stmt->fetch()) {
-            echo "<img src='" . $row['about_img'] . "'>";
+            echo "<img src='" . $row['about_img'] . "'alt=". $row['about_img_alt_en'] . "'>";
+            echo "<img src='" . $row['about_img'] . "'alt='". $row['about_img_alt_pt'] . "'>";
             echo "<h2>" . $row['about_title_en'] . "</h2>";
             echo "<p>" . $row['about_content_en'] . "</p>";
             echo "<button><a href='" . $row['about_button_href_en'] . "'>" . $row['about_button'] . "</a></button>";
