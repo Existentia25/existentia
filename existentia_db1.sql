@@ -14,10 +14,38 @@ CREATE TABLE about(
 
 CREATE TABLE faq(
                        id_faq INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-                       faq_question_en VARCHAR(255),
-                       faq_question_pt VARCHAR(255),
-                       faq_answer_en TEXT,
-                       faq_answer_pt TEXT
+                       faq_question_en1 VARCHAR(255),
+                       faq_question_pt1 VARCHAR(255),
+                       faq_answer_en1 TEXT,
+                       faq_answer_pt1 TEXT,
+                       faq_question_en2 VARCHAR(255),
+                       faq_question_pt2 VARCHAR(255),
+                       faq_answer_en2 TEXT,
+                       faq_answer_pt2 TEXT,
+                       faq_question_en3 VARCHAR(255),
+                       faq_question_pt3 VARCHAR(255),
+                       faq_answer_en3 TEXT,
+                       faq_answer_pt3 TEXT,
+                       faq_question_en4 VARCHAR(255),
+                       faq_question_pt4 VARCHAR(255),
+                       faq_answer_en4 TEXT,
+                       faq_answer_pt4 TEXT,
+                       faq_question_en5 VARCHAR(255),
+                       faq_question_pt5 VARCHAR(255),
+                       faq_answer_en5 TEXT,
+                       faq_answer_pt5 TEXT,
+                       faq_question_en6 VARCHAR(255),
+                       faq_question_pt6 VARCHAR(255),
+                       faq_answer_en6 TEXT,
+                       faq_answer_pt6 TEXT,
+                       faq_question_en7 VARCHAR(255),
+                       faq_question_pt7 VARCHAR(255),
+                       faq_answer_en7 TEXT,
+                       faq_answer_pt7 TEXT,
+                       faq_question_en8 VARCHAR(255),
+                       faq_question_pt8 VARCHAR(255),
+                       faq_answer_en8 TEXT,
+                       faq_answer_pt8 TEXT
 
 );
 
