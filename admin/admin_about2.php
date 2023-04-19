@@ -108,14 +108,14 @@ if (isset($_POST["about_title_en"], $_POST["about_title_pt"], $_POST["about_cont
         <form action="" method="POST" enctype="multipart/form-data">
             <input type="text" required placeholder="titre_anglais" class="about_box" name="about_title_en"> <br>
             <input type="text" required placeholder="titre_portugais" class="about_box" name="about_title_pt"> <br>
-            <input type="text" required placeholder="contenu_anglais" class="about_box" name="about_content_en"> <br>
-            <input type="text" required placeholder="contenu_portugais" class="about_box" name="about_content_pt"> <br>
+            <textarea required placeholder="contenu_anglais" class="about_box" name="about_content_en"></textarea><br>
+            <textarea required placeholder="contenu_portugais" class="about_box" name="about_content_pt"></textarea><br>
             <input type="file" required accept=".jpg,.jpeg,.png" class="about_box" name="uploaded_img"> <br>
-            <input type="text" required placeholder="alt_anglais" class="about_box" name="about_img_alt_en"> <br>
-            <input type="text" required placeholder="alt_portugais" class="about_box" name="about_img_alt_pt"> <br>
-            <input type="text" required placeholder="about_button" class="about_box" name="about_button"> <br>
-            <input type="text" required placeholder="href_anglais" class="about_box" name="about_button_href_en"> <br>
-            <input type="text" required placeholder="href_portugais" class="about_box" name="about_button_href_pt"> <br>
+            <input type="text" required placeholder="description_img_anglais" class="about_box" name="about_img_alt_en"> <br>
+            <input type="text" required placeholder="description_img_portugais" class="about_box" name="about_img_alt_pt"> <br>
+            <input type="text" required placeholder="bouton" class="about_box" name="about_button"> <br>
+            <input type="text" required placeholder="lien_bouton_anglais" class="about_box" name="about_button_href_en"> <br>
+            <input type="text" required placeholder="lien_bouton_portugais" class="about_box" name="about_button_href_pt"> <br>
             <input type="submit" value="valider">
         </form>
     </section>
