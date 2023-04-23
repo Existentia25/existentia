@@ -23,7 +23,7 @@ try {
     </div><br>' . $err->getMessage();
 }
 
-if (isset($_POST["blog_img_alt_en"], $_POST["blog_img_alt_pt"], $_POST["blog_title_en"], $_POST["blog_title_pt"], $_POST["blog_author"], $_POST["blog_date_time"], $_POST["blog_category_en"], $_POST["blog_category_pt"], $_POST["blog_readmore_en"], $_POST["blog_readmore_pt"], $_POST["blog_content_en"], $_POST["blog_content_pt"], $_POST["blog_button"], $_POST["blog_button_href_en"], $_POST["blog_button_href_pt"])) {
+if (isset($_POST["blog_img_alt_en"], $_POST["blog_img_alt_pt"], $_POST["blog_title_en"], $_POST["blog_title_pt"], $_POST["blog_author"], $_POST["blog_date_time"], $_POST["blog_category_en"], $_POST["blog_category_pt"], $_POST["blog_read_more_en"], $_POST["blog_read_more_pt"], $_POST["blog_content_en"], $_POST["blog_content_pt"], $_POST["blog_button"], $_POST["blog_button_href_en"], $_POST["blog_button_href_pt"])) {
     // Récupération des données du formulaire d'ajout d'une section "à propos"
     $blog_img_alt_en = htmlspecialchars(trim($_POST["blog_img_alt_en"]));
     $blog_img_alt_pt = htmlspecialchars(trim($_POST["blog_img_alt_pt"]));
@@ -33,8 +33,8 @@ if (isset($_POST["blog_img_alt_en"], $_POST["blog_img_alt_pt"], $_POST["blog_tit
     $blog_date_time = htmlspecialchars(trim($_POST["blog_date_time"]));
     $blog_category_en = htmlspecialchars(trim($_POST["blog_category_en"]));
     $blog_category_pt = htmlspecialchars(trim($_POST["blog_category_pt"]));
-    $blog_readmore_en = htmlspecialchars(trim($_POST["blog_readmore_en"]));
-    $blog_readmore_pt = htmlspecialchars(trim($_POST["blog_readmore_pt"]));
+    $blog_read_more_en = htmlspecialchars(trim($_POST["blog_read_more_en"]));
+    $blog_read_more_pt = htmlspecialchars(trim($_POST["blog_read_more_pt"]));
     $blog_content_en = htmlspecialchars(trim($_POST["blog_content_en"]));
     $blog_content_pt = htmlspecialchars(trim($_POST["blog_content_pt"]));
     $blog_button = htmlspecialchars(trim($_POST["blog_button"]));
@@ -74,9 +74,9 @@ if (isset($_POST["blog_img_alt_en"], $_POST["blog_img_alt_pt"], $_POST["blog_tit
     if ($row > 0) { // Si une entrée avec le même titre existe déjà dans la base de données
         echo "Le titre existe déjà."; // Afficher un message d'erreur à l'utilisateur
     } else { // Sinon, si aucune entrée avec le même titre n'existe dans la base de données
-        $sql = "INSERT INTO blog (blog_img_alt_en, blog_img_alt_pt, blog_title_en, blog_title_pt, blog_author, blog_date_time, blog_category_en, blog_category_pt, blog_readmore_en, blog_readmore_pt, blog_content_en, blog_content_pt, blog_button, blog_button_href_en, blog_button_href_pt, blog_img) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"; // Préparation de la requête d'insertion pour ajouter une nouvelle entrée à la table "blog"
+        $sql = "INSERT INTO blog (blog_img_alt_en, blog_img_alt_pt, blog_title_en, blog_title_pt, blog_author, blog_date_time, blog_category_en, blog_category_pt, blog_read_more_en, blog_read_more_pt, blog_content_en, blog_content_pt, blog_button, blog_button_href_en, blog_button_href_pt, blog_img) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"; // Préparation de la requête d'insertion pour ajouter une nouvelle entrée à la table "blog"
         $stmt = $cnn->prepare($sql); // Préparation de la requête avec la commande "prepare"
-        $stmt->execute([$blog_img_alt_en, $blog_img_alt_pt, $blog_title_en, $blog_title_pt, $blog_author, $blog_date_time, $blog_category_en, $blog_category_pt, $blog_readmore_en, $blog_readmore_pt, $blog_content_en, $blog_content_pt, $blog_button, $blog_button_href_en, $blog_button_href_pt, $file_dest]); // Exécution de la requête avec les valeurs fournies dans un tableau sous forme de paramètres
+        $stmt->execute([$blog_img_alt_en, $blog_img_alt_pt, $blog_title_en, $blog_title_pt, $blog_author, $blog_date_time, $blog_category_en, $blog_category_pt, $blog_read_more_en, $blog_read_more_pt, $blog_content_en, $blog_content_pt, $blog_button, $blog_button_href_en, $blog_button_href_pt, $file_dest]); // Exécution de la requête avec les valeurs fournies dans un tableau sous forme de paramètres
         header('location:admin_blog2.php'); // Redirection de l'utilisateur vers la page "admin_blog.php"
     }
 
@@ -84,7 +84,7 @@ if (isset($_POST["blog_img_alt_en"], $_POST["blog_img_alt_pt"], $_POST["blog_tit
 ?>
 
 
-<<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -123,8 +123,8 @@ if (isset($_POST["blog_img_alt_en"], $_POST["blog_img_alt_pt"], $_POST["blog_tit
             <input type="date" required placeholder="date_de_publication" class="blog_box" name="blog_date_time" value=""> <br>
             <input type="text" required placeholder="catégorie_anglais" class="blog_box" name="blog_category_en"> <br>
             <input type="text" required placeholder="catégorie_portugais" class="blog_box" name="blog_category_pt"> <br>
-            <input type="text" required placeholder="en_savoir_plus_anglais" class="blog_box" name="blog_readmore_en"> <br>
-            <input type="text" required placeholder="en_savoir_plus_portugais" class="blog_box" name="blog_readmore_pt"> <br>
+            <input type="text" required placeholder="en_savoir_plus_anglais" class="blog_box" name="blog_read_more_en"> <br>
+            <input type="text" required placeholder="en_savoir_plus_portugais" class="blog_box" name="blog_read_more_pt"> <br>
             <textarea required placeholder="contenu_anglais" class="blog_box" name="blog_content_en"></textarea><br>
             <textarea required placeholder="contenu_portugais" class="blog_box" name="blog_content_pt"></textarea><br>
             <input type="text" required placeholder="bouton" class="blog_box" name="blog_button"> <br>
@@ -143,18 +143,17 @@ if (isset($_POST["blog_img_alt_en"], $_POST["blog_img_alt_pt"], $_POST["blog_tit
 
         //affichage des résultats
         while ($row = $stmt->fetch()) {
-            echo "<img src='" . $row['blog_img'] . "'>";
-            echo "<p>" . $row['blog_img_alt_en'] . "</p>"; 
-            echo "<p>" . $row['blog_img_alt_pt'] . "</p>";
+            echo "<img src='" . $row['blog_img'] . "'alt='". $row['blog_img_alt_en'] . "'>";
+            echo "<img src='" . $row['blog_img'] . "'alt='". $row['blog_img_alt_pt'] . "'>";
             echo "<h2>" . $row['blog_title_en'] . "</h2>";
             echo "<h2>" . $row['blog_title_pt'] . "</h2>";
             echo "<h3>" . $row['blog_author'] . "</h3>";
             echo "<p time datetime='2023-00-00'>" . $row['blog_date_time'] . "</time></p>";
             echo "<p>" . $row['blog_category_en'] . "</p>";
             echo "<p>" . $row['blog_category_pt'] . "</p>";
-            echo "<p>" . $row['blog_readmore_en'] . "</p>";
+            echo "<p>" . $row['blog_read_more_en'] . "</p>";
             echo "<button><a href='" . $row['blog_button_href_en'] . "'>" . $row['blog_button'] . "</a></button>";
-            echo "<p>" . $row['blog_readmore_pt'] . "</p>";
+            echo "<p>" . $row['blog_read_more_pt'] . "</p>";
             echo "<button><a href='" . $row['blog_button_href_pt'] . "'>" . $row['blog_button'] . "</a></button>";
 
             

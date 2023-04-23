@@ -128,13 +128,12 @@ if (isset($_POST["testimony_title_en"], $_POST["testimony_title_pt"], $_POST["te
 
         //affichage des résultats
         while ($row = $stmt->fetch()) {
-            
             echo "<h3>" . $row['testimony_title_en'] . "</h3>";
             echo "<h3>" . $row['testimony_title_pt'] . "</h3>";
             echo "<p>" . $row['testimony_content_en'] . "</p>";
             echo "<p>" . $row['testimony_content_pt'] . "</p>";
-            echo "<img src='" . $row['testimony_img'] . " alt=". $row['testimony_img_alt_en'] . "'>";
-            echo "<img src='" . $row['testimony_img'] . " alt=". $row['testimony_img_alt_pt'] . "'>";
+            echo "<img src='" . $row['testimony_img'] . "'alt='". $row['testimony_img_alt_en'] . "'>";
+            echo "<img src='" . $row['testimony_img'] . "'alt='". $row['testimony_img_alt_pt'] . "'>";
             echo "<h4>" . $row['testimony_name_en'] . "</h4>";
             echo "<h4>" . $row['testimony_name_pt'] . "</h4>";
            

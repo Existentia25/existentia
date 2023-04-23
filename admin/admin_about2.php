@@ -87,18 +87,18 @@ if (isset($_POST["about_title_en"], $_POST["about_title_pt"], $_POST["about_cont
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>About</title>
 </head>
 
 <body class="container">
     <!-- ==================HEADER================== -->
     <section class="header">
         <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <a href="../index.php"> <img src="../assets/img/logo_existentia.png" style="position: relative;left: 19rem;width: 40%;margin-bottom: 3rem;background-color:cornflowerblue; border-radius:5px;"></a>
+            <p class="lead">ABOUT_This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
             <hr class="my-4">
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            <a class="btn btn-primary btn-lg" href="../index.php" role="button">Learn more</a>
         </div>
     </section>
 
@@ -129,7 +129,7 @@ if (isset($_POST["about_title_en"], $_POST["about_title_pt"], $_POST["about_cont
 
         //affichage des résultats
         while ($row = $stmt->fetch()) {
-            echo "<img src='" . $row['about_img'] . "'alt=". $row['about_img_alt_en'] . "'>";
+            echo "<img src='" . $row['about_img'] . "'alt='". $row['about_img_alt_en'] . "'>";
             echo "<img src='" . $row['about_img'] . "'alt='". $row['about_img_alt_pt'] . "'>";
             echo "<h2>" . $row['about_title_en'] . "</h2>";
             echo "<p>" . $row['about_content_en'] . "</p>";
