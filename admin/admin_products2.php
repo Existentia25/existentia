@@ -74,7 +74,7 @@ if (isset($_POST["products_img_alt_en"], $_POST["products_img_alt_pt"],$_POST["p
     } else { // Sinon, si aucune entrée avec le même titre n'existe dans la base de données
         $sql = "INSERT INTO products (products_img_alt_en, products_img_alt_pt, products_title_en, products_title_pt, products_subtitle_en, products_subtitle_pt, products_content_en, products_content_pt, products_description_en, products_description_pt , products_button,  products_button_href_en, products_button_href_pt, products_img) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)"; // Préparation de la requête d'insertion pour ajouter une nouvelle entrée à la table "about"
         $stmt = $cnn->prepare($sql); // Préparation de la requête avec la commande "prepare"
-        $stmt->execute([ $products_img_alt_en, $products_img_alt_pt, $products_title_en, $products_title_pt, $products_subtitle_en , $products_subtitle_pt, $products_content_en, $products_content_pt, $products_button,$products_description_en, $products_description_pt, $products_button_href_en, $file_dest]); // Exécution de la requête avec les valeurs fournies dans un tableau sous forme de paramètres
+        $stmt->execute([ $products_img_alt_en, $products_img_alt_pt, $products_title_en, $products_title_pt, $products_subtitle_en , $products_subtitle_pt, $products_content_en, $products_content_pt, $products_button,$products_description_en, $products_description_pt, $products_button_href_en, $products_button_href_pt, $file_dest]); // Exécution de la requête avec les valeurs fournies dans un tableau sous forme de paramètres
         header('location:admin_products.php'); // Redirection de l'utilisateur vers la page "admin_products.php"
     }
     
