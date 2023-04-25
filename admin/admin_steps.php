@@ -68,7 +68,7 @@ if (isset($_POST["steps_title_en"], $_POST["steps_title_pt"], $_POST["steps_card
         $sql = "INSERT INTO steps (steps_title_en, steps_title_pt, steps_card_description_en, steps_card_description_pt, steps_card_title_en, steps_card_title_pt) VALUES(?,?,?,?,?,?)"; // Préparation de la requête d'insertion pour ajouter une nouvelle entrée à la table "about"
         $stmt = $cnn->prepare($sql); // Préparation de la requête avec la commande "prepare"
         $stmt->execute([$steps_title_en, $steps_title_pt, $steps_card_description_en, $steps_card_description_pt, $steps_card_title_en, $steps_card_title_pt, $file_dest]); // Exécution de la requête avec les valeurs fournies dans un tableau sous forme de paramètres
-        header('location:admin_steps2.php'); // Redirection de l'utilisateur vers la page "steps_about.php"
+        header('location:admin_steps.php'); // Redirection de l'utilisateur vers la page "steps_about.php"
     }
 }
 ?>
