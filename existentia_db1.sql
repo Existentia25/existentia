@@ -10,6 +10,26 @@ CREATE TABLE about(
 
 );
 
+CREATE TABLE steps(
+                    id_steps INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+                    steps_title_en VARCHAR(255) NOT NULL,
+                    steps_title_pt VARCHAR(255) NOT NULL,
+                    steps_card_title_en VARCHAR(255) NOT NULL,
+                    steps_card_title_pt VARCHAR(255) NOT NULL,
+                    steps_card_description_en TEXT,
+                    steps_card_description_pt TEXT
+);
+
+CREATE TABLE gallery (
+                       id_gallery INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+                       gallery_title_en VARCHAR(255) NOT NULL,
+                       gallery_title_pt VARCHAR(255) NOT NULL,
+                       gallery_description_en TEXT,
+                       gallery_description_pt TEXT,
+                       gallery_img_alt_en VARCHAR(255) NOT NULL,
+                       gallery_img_alt_pt VARCHAR(255) NOT NULL,
+);
+
 
 
 CREATE TABLE faq(
