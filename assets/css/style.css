@@ -1218,7 +1218,7 @@ the website, in dark theme
 .header__blog{
   margin-top: 77px;
 }
-.header__content {
+.header__contents {
     background-color: #262c29;
     padding: 66px;
     text-align: center;
@@ -1228,12 +1228,13 @@ the website, in dark theme
     
   
   }
-  .section__title-center{
+  .section__title-centers{
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
     width: 1400px;
+    text-align: center;
 
   }
   #blog{
@@ -1316,13 +1317,13 @@ the website, in dark theme
     width: 250px;
     margin-left: 0px;
   }
-  .section__title, .section__title-center {
+  .section__title, .section__title-centers {
     padding-top: 65px;
     margin-bottom: 0;
     width: 220px;
 
     }
-    .section__title-center{
+    .section__title-centers{
       padding-left: 179px;
       width: 619px;
     }
