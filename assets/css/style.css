@@ -626,7 +626,7 @@ the website, in dark theme
 .block2{
   grid-row: 1;
   grid-column: 3 / span 2;
-  background: url("../img/image2.jpg") center/ cover no-repeat;
+  background: url("../img/image2.jpeg") center/ cover no-repeat;
   height: 300px
 }
 .block3{
@@ -656,7 +656,7 @@ the website, in dark theme
 .block7{
   grid-row: 3;
   grid-column: 3 / span 2;
-  background: url("../img/image7.jpg") center/ cover no-repeat;
+  background: url("../img/image7.jpeg") center/ cover no-repeat;
   height: 300px
 }
 .block8{
@@ -674,7 +674,7 @@ the website, in dark theme
 .block10{
   grid-row: 4;
   grid-column: 4 / span 3;
-  background: url("../img/image10.jpg") center/ cover no-repeat;
+  background: url("../img/image10.jpeg") center/ cover no-repeat;
   height: 400px
 }
 
