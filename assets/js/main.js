@@ -46,7 +46,7 @@ divs.forEach(function(BG, idx){
     BG.addEventListener('click', function(){
         fullscreenView.style.display = "block";
 
-        fullscreenView.style.background = `url(assets/img/image${idx + 1}.jpg) center/ cover no-repeat`;
+        fullscreenView.style.background = `url(assets/img/image${idx + 1}.jpeg) center/ cover no-repeat`;
     })
 })
 
