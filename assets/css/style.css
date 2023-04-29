@@ -987,10 +987,6 @@ the website, in dark theme
   font-weight: var(--h3-font-size);
   color: var(--first-color);
 }
-.profile-desc span:nth-child(2) {
-  font-size: 15px;
-  color: var(--first-color-lighten);
-}
 .owl-nav{
   position: absolute;
   right: 20px;
