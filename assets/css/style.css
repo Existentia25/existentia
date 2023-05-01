@@ -1233,6 +1233,9 @@ the website, in dark theme
     text-align: center;
 
   }
+.button_articles{
+    text-align: center;
+  }
   #blog{
     margin-left: 30px;
   }
