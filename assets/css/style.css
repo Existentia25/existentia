@@ -1279,6 +1279,7 @@ the website, in dark theme
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: 1rem;
+    margin-top: -3rem ;
     font-size: var(--h3-font-size);
     justify-content: space-between;
     }
