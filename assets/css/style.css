@@ -598,6 +598,10 @@ the website, in dark theme
   .product__card:hover .product__img{
     transform: translateY(-.5rem);
   }
+  .product__card ul li{
+    text-align: left;
+  
+  }
 /*==================== GALLERY ====================*/
 .gallery{
   padding: 5.5rem 0 1rem;
@@ -640,7 +644,7 @@ the website, in dark theme
 .block4{
   grid-row: 2;
   grid-column: 1 / span 3;
-  background: url("../img/IMG-moz1.jpg") center/ cover no-repeat;
+  background: url("../img/image14.jpg") center/ cover no-repeat;
   height: 400px
 }
 .block5{
@@ -652,7 +656,7 @@ the website, in dark theme
 .block6{
   grid-row: 3;
   grid-column: 1 / span 2;
-  background: url("../img/IMG-moz2.jpg") center/ cover no-repeat;
+  background: url("../img/image13.jpg") center/ cover no-repeat;
   height: 300px
 }
 .block7{
@@ -670,7 +674,7 @@ the website, in dark theme
 .block9{
   grid-row: 4;
   grid-column: 1 / span 3;
-  background: url("../img/IMG-moz3.jpg") center/ cover no-repeat;
+  background: url("../img/image12.jpg") center/ cover no-repeat;
   height: 400px
 }
 .block10{
@@ -883,7 +887,6 @@ the website, in dark theme
   transition: .3s;
 }
 
-
 .blog__title{
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
@@ -895,26 +898,6 @@ the website, in dark theme
   color: var(--first-color);
   padding-top: 15px;
 }
-.button_articles{
-    text-align: center;
-  }
-  .blog_img{
-    max-width: 100%;
-    height: auto;
-  }
-  .blog__article span{
-   color: var(--title-color);
-  }
-  .blog__article p{
-    color: var(--title-color);
-    text-align: justify;
-  }
-  .title__article{
-    padding-top: 30px;
-  }
-  #blog{
-    margin-left: 30px;
-  }
 .blog__button{
   position: absolute;
   right: .50rem;
@@ -1262,6 +1245,7 @@ the website, in dark theme
   #blogs{
     margin-left: 30px;
   }
+
   #blog{
     padding: 0 0 1rem;
     margin-left: 30px
@@ -1314,7 +1298,6 @@ the website, in dark theme
     font-size: var(--normal-font-size);
   
     }
-
 
 /*========================  sibare ============================*/
 .sidebar ul li a{
@@ -1378,6 +1361,10 @@ the website, in dark theme
   width: 225px;
   padding-left: 85px;
  }
+.nav__btns{
+  column-gap: 0rem;
+  justify-content: space-between;
+}
 .blog__img{
   padding-left: 0px;
     width: 250px;
@@ -1389,6 +1376,9 @@ the website, in dark theme
     padding-top: 145px;
     margin-top: -430px;
 
+  }
+  .nav__btns{
+    padding-left: 13px;
   }
   #nav_screem{
     margin-right: 0px;
@@ -1407,6 +1397,7 @@ the website, in dark theme
       padding-left: 179px;
       width: 619px;
     }
+
     
     #blog{
       
