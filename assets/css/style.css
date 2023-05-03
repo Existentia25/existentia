@@ -1262,6 +1262,59 @@ the website, in dark theme
   #blogs{
     margin-left: 30px;
   }
+  #blog{
+    padding: 0 0 1rem;
+    margin-left: 30px
+    }
+    .blog-card{
+    padding : 0 !important;
+    }
+    .card{
+    width: 100% !important;
+    border: none;
+    }
+    .blog-description{
+    display: contents !important;
+    text-align: center;
+    color: var(--container-color);
+    }
+    .img{
+      height: auto;
+      width: 100% !important;
+      margin-bottom: 3rem;
+      
+      
+    }
+    .blog__containers{
+      margin-left: 20rem;
+      margin-top: 5rem;
+      width: 100vh;
+    }
+    .author{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 1rem;
+    font-size: var(--h3-font-size);
+    justify-content: space-between;
+    }
+    .title{
+    margin-bottom: 3rem;
+    font-size: var(--h2-font-size) !important;
+    text-align: center;
+    }
+    .blog-content{
+    text-align: justify !important;
+    padding: var(--mb-1);
+    }
+    .content{
+    position: relative;
+    width: 90%;
+    left: 2.5rem;
+    padding: 0 2rem 2rem;
+    font-size: var(--normal-font-size);
+  
+    }
+
 
 /*========================  sibare ============================*/
 .sidebar ul li a{
