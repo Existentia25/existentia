@@ -883,6 +883,7 @@ the website, in dark theme
   transition: .3s;
 }
 
+
 .blog__title{
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
@@ -894,6 +895,26 @@ the website, in dark theme
   color: var(--first-color);
   padding-top: 15px;
 }
+.button_articles{
+    text-align: center;
+  }
+  .blog_img{
+    max-width: 100%;
+    height: auto;
+  }
+  .blog__article span{
+   color: var(--title-color);
+  }
+  .blog__article p{
+    color: var(--title-color);
+    text-align: justify;
+  }
+  .title__article{
+    padding-top: 30px;
+  }
+  #blog{
+    margin-left: 30px;
+  }
 .blog__button{
   position: absolute;
   right: .50rem;
