@@ -9,9 +9,16 @@
 
         <!--=============== REMIX ICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        
+
+        <!--=============== OWL CAROUSEL LINKS ===============-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+
        <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/style.css">
+        
 
         <title>Existentia || CONCIERGE AND LIFESTYLE SERVICES</title>
     </head>
@@ -19,7 +26,7 @@
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="index.html" class="nav__logo">
+                <a href="index.html#" class="nav__logo">
                     <img src="assets/img/logo_navbar.png" alt="" style="width: 150px;">
                 </a>
 
@@ -41,7 +48,7 @@
                             <a href="index.html#faqs" class="nav__link">FAQs</a>
                         </li>
                         <li class="nav__item">
-                            <a href="index.html#blog" class="nav__link">Blog</a>
+                            <a href="#blog" class="nav__link">Blog</a>
                         </li>
                         <li class="nav__item">
                             <a href="index.html#contact" class="nav__link">Contact</a>
@@ -58,7 +65,7 @@
                     <!-- Theme change button -->
                     <a href="login_page.html" ><i class="ri-user-3-fill" id="user-button"></i></a>
                     <i class="ri-moon-line change-theme" id="theme-button"></i>
-                    <a href="blog_category_port.html" ><img src="assets/img/portugal.png" alt="" style="width: 30px;"></a>
+                    <a href="blog_port.html" ><img src="assets/img/portugal.png" alt="" style="width: 30px;"></a>
 
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="ri-menu-line"></i>
@@ -71,13 +78,14 @@
             <!--====================================== header =================================-->
  <section class="header_blog">
             <div class="header__contents">
+            <div class="header__contents">
                 <h1 class="header__title"><img src="assets/img/logo_navbar.png" alt="" style="width: 150px;"></h1>
-                <h2 class="header__subtitle" style="color:whitesmoke">Category</h2>
+                <h2 class="header__subtitle"style="color:whitesmoke">CATEGORIES</h2>
             </div>
  </section>
         
-    <section class="blog section container" id="blog">
-            <h2 class="section__title-center">Category</h2>
+    <section class="blog section container" id="blogs">
+            <h2 class="section__title-centers">Check out our blog</h2>
           
             <div class="blog__container">
         <article class="blog__card">
@@ -86,9 +94,9 @@
                 <p class="blog__author">Author Name</p>
                 <p class="blog__date">Date of publication</p>
                 <p class="blog__categorie">Category</p>
-                <a href="blog-article.html" target="_blank" class="blog__article">Reading Time</a>
+                <a href="blog-article.html" target="_blank" class="blog__article">Read more</a>
                 <div class="heart">
-                    <i class="ri-heart-fill"></i>
+                    <i class="ri-heart-fill"></i> </span>
                 </div>
         </article>
         <article class="blog__card">
@@ -97,9 +105,9 @@
                 <p class="blog__author">Author Name</p>
                 <p class="blog__date">Date of publication</p>
                 <p class="blog__categorie">Category</p>
-                <a href="blog-article.html" target="_blank" class="blog__article">Reading Time</a>
+                <a href="blog-article.html" target="_blank" class="blog__article">Read more</a>
                 <div class="heart">
-                    <i class="ri-heart-fill"></i>
+                    <i class="ri-heart-fill"></i> </span>
                 </div>
         </article>
         <article class="blog__card">
@@ -108,21 +116,26 @@
                 <p class="blog__author">Author Name</p>
                 <p class="blog__date">Date of publication</p>
                 <p class="blog__categorie">Category</p>
-                <a href="blog-article.html" target="_blank" class="blog__article">Reading Time</a>
+                <a href="blog-article.html" target="_blank" class="blog__article">Read more</a>
                 <div class="heart">
-                    <i class="ri-heart-fill"></i>
+                    <i class="ri-heart-fill"></i> </span>
                 </div>
         </article>
+        
             </div>
-       
     </section>
+     <div class="button_articles">
+        <a href="#" class="button button--flex">
+            See all articles<i class="ri-arrow-right-down-line button__icon"></i>
+        </a>
+    </div>
     <section class="sidebar_container">
         <aside class="sidebar">
             <h2 class="sidebar__title">Category</h2>
             <ul class="sidebar__list">
               <li><a href="blog_category.html">Services</a></li>
               <li><a href="blog_category.html">Voyages</a></li>
-              <li><a href="blog_category.html">Articles</a></li>
+              <li><a href="blog-article.html">Articles</a></li>
             </ul>
         </aside>
     </section>
@@ -203,15 +216,20 @@
                 <a href="https://wa.me/33646924891" target="_blank"><img src="assets/img/logo_whatsapp.png"  alt="" width="50px" class="whatsapp_float_btn"></a>
             </div>
             
+        <!--=============== JQUERY LINK ===============-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!--=============== OWL CAROUSEL SCRIPT LINK ===============-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
         <!--=============== SCROLL UP ===============-->
         <a href="#" class="scrollup" id="scroll-up"> 
             <i class="ri-arrow-up-fill scrollup__icon"></i>
         </a>
-        
+
         <!--=============== SCROLL REVEAL ===============-->
         <script src="assets/js/scrollreveal.min.js"></script>
-
-       <!--=============== DARK LIGHT THEME ===============-->
+        
+        <!--=============== DARK LIGHT THEME ===============-->
     <script> themeButton = document.getElementById('theme-button')
         const darkTheme = 'dark-theme'
         const iconTheme = 'ri-sun-line'
@@ -241,6 +259,8 @@
             localStorage.setItem('selected-icon', getCurrentIcon())
         })
     </script>
+
+ </body>
         
 </html>
         
