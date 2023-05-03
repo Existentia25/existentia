@@ -600,6 +600,7 @@ the website, in dark theme
   }
   .product__card ul li{
     text-align: left;
+    padding: 1rem;
   
   }
 /*==================== GALLERY ====================*/
