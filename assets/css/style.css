@@ -996,32 +996,32 @@ the website, in dark theme
   bottom: -10px;
 }
 .owl-nav button{
-  border-radius: 50% !important;
+  border-radius: 50% ;
 }
 .owl-nav .owl-prev i,
 .owl-nav .owl-next i{
-  padding: 10px !important;
+  padding: 10px ;
   border-radius: 50%;
-  font-size: 18px !important;
-  background-color: var(--first-color) !important;
+  font-size: 18px ;
+  background-color: var(--first-color);
   color: var(--container-color);
   cursor: pointer;
   transition: 0.4s;
 }
 .owl-nav .owl-prev i:hover,
 .owl-nav .owl-next i:hover{
-  background-color: var(--first-color-alt) !important;
+  background-color: var(--first-color-alt);
   color: var(--first-color-light);
 }
 .owl-dots{
   margin-top: 15px;
 }
 .owl-dots .owl-dot span{
-  background-color: var(--first-color-lighten) !important;
-  padding: 6px !important;
+  background-color: var(--first-color-lighten);
+  padding: 6px;
 }
 .owl-dot.active span{
-  background-color: var(--first-color-alt) !important;
+  background-color: var(--first-color-alt);
 }
 /*=============== CONTACT ===============*/
 .contact {
