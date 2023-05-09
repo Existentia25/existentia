@@ -147,3 +147,6 @@ button{
 .signUp-link p a:hover{
     text-decoration: underline;
 }
+.remember label input{
+    accent-color: #d3ad7f;
+}
