@@ -1281,11 +1281,14 @@ the website, in dark theme
     margin-bottom: 1rem;
     font-size: var(--h3-font-size);
     justify-content: space-between;
+    color: var(--first-color);  
     }
     .title{
     margin-bottom: 3rem;
     font-size: var(--h2-font-size) !important;
     text-align: center;
+    color: var(--title-color);
+      
     }
     .blog-content{
     text-align: justify !important;
