@@ -627,7 +627,7 @@ the website, in dark theme
 .block1{
   grid-row: 1;
   grid-column: 1 / span 2;
-  background: url("../img/image1.jpg") center/ cover no-repeat;
+  background: url("../img/image1.jpeg") center/ cover no-repeat;
   height: 300px
 }
 .block2{
@@ -639,7 +639,7 @@ the website, in dark theme
 .block3{
   grid-row: 1;
   grid-column: 5 / span 2;
-  background: url("../img/image3.jpg") center/ cover no-repeat;
+  background: url("../img/image3.jpeg") center/ cover no-repeat;
   height: 300px
 }
 .block4{
@@ -651,7 +651,7 @@ the website, in dark theme
 .block5{
   grid-row: 2;
   grid-column: 4 / span 3;
-  background: url("../img/image5.jpg") center/ cover no-repeat;
+  background: url("../img/image5.jpeg") center/ cover no-repeat;
   height: 400px
 }
 .block6{
@@ -669,7 +669,7 @@ the website, in dark theme
 .block8{
   grid-row: 3;
   grid-column: 5 / span 2;
-  background: url("../img/image8.jpg") center/ cover no-repeat;
+  background: url("../img/image8.jpeg") center/ cover no-repeat;
   height: 300px
 }
 .block9{
