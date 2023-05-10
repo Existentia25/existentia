@@ -67,7 +67,12 @@ CREATE TABLE testimony(
                        testimony_title_en VARCHAR(255),
                        testimony_title_pt VARCHAR(255),
                        testimony_content_en TEXT,
-                       testimony_content_pt TEXT
+                       testimony_content_pt TEXT,
+                       testimony_name_en VARCHAR(255),
+                       testimony_name_pt VARCHAR(255),
+                       testimony_img VARCHAR(255),
+                       testimony_img_alt_en VARCHAR(255),
+                       testimony_img_alt_pt VARCHAR(255)
 
 )
 
