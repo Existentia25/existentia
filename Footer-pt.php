@@ -57,19 +57,6 @@
                         </div>
                     </ul>
                 </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title">
-                        Nós aceitamos todos os cartões de crédito
-                    </h3>
-
-                    <div class="footer__cards">
-                        <img src="assets/img/card1.png" alt="" class="footer__card">
-                        <img src="assets/img/card2.png" alt="" class="footer__card">
-                        <img src="assets/img/card3.png" alt="" class="footer__card">
-                        <img src="assets/img/card4.png" alt="" class="footer__card">
-                    </div>
-                </div>
             </div>
 
             <p class="footer__copy">&#169; A-TEAM Développement. All rigths reserved</p>
