@@ -1367,6 +1367,7 @@ the website, in dark theme
     .blog__containers p{
       text-align: center;
       font-size: small;
+      padding-right: 3rem;
     }
     }
 
