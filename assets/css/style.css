@@ -1726,7 +1726,7 @@ the website, in dark theme
   }
 
   .footer__container{
-    column-gap: 3rem;
+    column-gap: 8rem;
   }
   .footer__subscribe{
     width: initial;
@@ -1846,7 +1846,7 @@ the website, in dark theme
     font-size: var(--h3-font-size);
   }
   .footer__container{
-    grid-template-columns: 1fr .5fr .5fr .5fr;
+    grid-template-columns: 33% 20% auto;
   }
   .footer__copy{
     margin: 7rem 0 2rem;
