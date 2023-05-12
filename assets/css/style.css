@@ -1400,8 +1400,8 @@ the website, in dark theme
 }
 
 
-/* Style de la barre latérale pour les écrans de 320px ou moins */
-@media screen and (max-width: 320px) {
+/* Style pour les écrans de 576px ou moins */
+@media screen and (max-width: 576px) {
   
 .sidebar_container{
   display: grid;
@@ -1430,12 +1430,16 @@ the website, in dark theme
   padding-left: 35px;
 }
 .nav__logo{
-  width: 225px;
-  padding-left: 85px;
+  width: 200px;
+  padding-left: 90px;
  }
+
 .nav__btns{
   column-gap: 0rem;
   justify-content: space-between;
+  margin-right: -28px;
+  padding-left: 85px;
+  padding-right: 25px;
 }
 .blog__img{
   padding-left: 0px;
