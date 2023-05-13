@@ -56,7 +56,8 @@ CREATE TABLE blog(
                        blog_read_more_pt VARCHAR(255),
                        blog_content_en TEXT,
                        blog_content_pt TEXT,
-                       blog_button VARCHAR(255),
+                       blog_button_en VARCHAR(255),
+                       blog_button_pt VARCHAR(255),
                        blog_button_href_en VARCHAR(255),
                        blog_button_href_pt VARCHAR(255)
                     
