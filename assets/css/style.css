@@ -1607,10 +1607,10 @@ the website, in dark theme
     position: relative;
   }
   .image-view {
-    right: 2rem;
-    left: 2rem;
-    top: 90rem;
-    bottom: 90rem;
+    right: 1rem;
+    left: 1rem;
+    top: 70rem;
+    bottom: 70rem;
   }
   .blog__container{
     display: flex;
