@@ -49,6 +49,9 @@
                             <a href="#blog" class="nav__link">Blogue</a>
                         </li>
                         <li class="nav__item">
+                            <a href="#Testimonials" class="nav__link">depoimentos</a>
+                        </li>
+                        <li class="nav__item">
                             <a href="#contact" class="nav__link">Contate Nos</a>
                         </li>
                     </ul>
@@ -874,30 +877,31 @@
                     </div>
 
                     <form action="" class="contact__form">
-                        <div class="contact__inputs">
-                            <div class="contact__content">
-                                <input type="text" placeholder=" " class="contact__input">
-                                <label for="" class="contact__label">Name</label>
-                            </div>
-
-                            <div class="contact__content">
-                                <input type="email" placeholder=" " class="contact__input">
-                                <label for="" class="contact__label">Email</label>
-                            </div>
-
-                            <div class="contact__content">
-                                <input type="text" placeholder=" " class="contact__input">
-                                <label for="" class="contact__label">Subject</label>
-                            </div>
-                            
-                            <div class="contact__content contact__area">
-                                <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
-                                <label for="" class="contact__label">Message</label>
-                            </div>
+                      <div class="contact__inputs">
+                        <div class="contact__content">
+                          <input type="text" id="name" class="contact__input" id="name"/>
+                          <label for="" class="contact__label">Nome</label>
                         </div>
 
-                        <button class="button button--flex">
-                            Send Message
+                        <div class="contact__content">
+                          <input type="email" id="email" class="contact__input" id="email"/>
+                          <label for="" class="contact__label">Email</label>
+                        </div>
+
+                        <div class="contact__content">
+                          <input type="text" id="subject" class="contact__input" id="subject"/>
+                          <label for="" class="contact__label">Sujeito</label>
+                        </div>
+
+                        <div class="contact__content contact__area">
+                          <textarea name="message" id="message" class="contact__input" id="message"></textarea>
+                          <label for="" class="contact__label">Mensagem</label>
+                        </div>
+                      </div>
+
+                      <div class="footer__subscribe">
+                        <button type="submit" class="button button--flex" onclick="whatsapp();">
+                            Enviar mensagem
                             <i class="ri-arrow-right-up-line button__icon"></i>
                         </button>
                     </form>
@@ -923,16 +927,17 @@
                         </div>
                     </form> -->
                     <div class="footer__subscribe">
-                        <input type="email" id="newsletterport" placeholder="Digite seu e-mail" class="footer__input">
-
-                        <input type="submit" class="button button--flex footer__button" onclick="whatsapp2()" value="Cadastro">
+                      <input type="email" id="newsletter" placeholder="Digite seu e-mail" class="footer__input" />
+                        <button class="button button--flex footer__button" onclick="whatsapp2();">
+                            Cadastro
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
 
                         <!-- <button class="button button--flex footer__button">
                             Subscribe
                             <i class="ri-arrow-right-up-line button__icon"></i>
                         </button> -->
-                    </div>
-                    
+                    </div>                 
                 </div>
 
                 <div class="footer__content">
@@ -985,31 +990,31 @@
         </a>
 
         <!--=============== WHATSAPP ===============-->
-        <script>
-            function whatsapp(){
-                var email = document.getElementById("email").value;
-                var subject = document.getElementById("subject").value;
-                var message = document.getElementById("message").value;
+          <script>
+            function whatsapp() {
+              var name = document.getElementById("name").value;
+              var email = document.getElementById("email").value;
+              var subject = document.getElementById("subject").value;
+              var message = document.getElementById("message").value;
 
-                var whatsappurl = "https://wa.me/33646924891?text="
-                +"Email : "+email+"%0a"
-                +"subject : "+subject+"%0a"
-                +"Message : "+message;
+              var url = "https://wa.me/33646924891?text=" 
+                +"*name :* " + name + "%0a"
+                +"*email :* " + email + "%0a" 
+                +"*subject :* " + subject + "%0a" 
+                +"*message :* " + message;
 
-                window.open(whatsappurl,"_blank").focus();
+              window.open(url, "_blank").focus();
             }
 
-            function whatsapp2(){
-                var newsletterport = document.getElementById("newsletterport").value;
+            function whatsapp2() {
+              var newsletter = document.getElementById("newsletter").value;
 
-                var whatsappurl = "https://wa.me/33646924891?text="
-                +"newsletterport : "+newsletterport;
+              var url = "https://wa.me/33646924891?text=" 
+              +"*newsletter :* " + newsletter;
 
-                window.open(whatsappurl,"_blank").focus();
+              window.open(url, "_blank").focus();
             }
-        </script>
-
-
+          </script>
 
         <!--=============== SCROLL REVEAL ===============-->
         <script src="assets/js/scrollreveal.min.js"></script>
