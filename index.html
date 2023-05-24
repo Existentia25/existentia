@@ -852,8 +852,6 @@
                                 <span><br><a href="https://wa.me/33646924891" target="_blank">
                                 +33 6 46 92 48 91 </a>
                                     </span>
-
-
                             </div>
 
                             <div class="contact__information">
@@ -912,9 +910,8 @@
                     </h3>
 
                     <div class="footer__subscribe">
-                        <input type="email" placeholder="Enter your email" class="footer__input">
-
-                        <button class="button button--flex footer__button">
+                      <input type="email" placeholder="Enter your email" class="footer__input" id="newsletter" />
+                        <button class="button button--flex footer__button" onclick="whatsapp2();">
                             Subscribe
                             <i class="ri-arrow-right-up-line button__icon"></i>
                         </button>
@@ -992,7 +989,7 @@
               var newsletter = document.getElementById("newsletter").value;
 
               var url = "https://wa.me/33646924891?text=" 
-              +"*newsletterport :* " + newsletter;
+              +"*newsletter :* " + newsletter;
 
               window.open(url, "_blank").focus();
             }
