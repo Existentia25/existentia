@@ -1267,8 +1267,7 @@ the website, in dark theme
       height: auto;
       width: 100% !important;
       margin-bottom: 3rem;
-      
-      
+     
     }
     .blog__containers{
       margin-left: 20rem;
@@ -1527,9 +1526,6 @@ the website, in dark theme
     }
   }
 
-
-
-
 /*=============== SCROLL UP ===============*/
 .scrollup{
   position: fixed;
@@ -1610,9 +1606,11 @@ the website, in dark theme
     display: grid;
     position: relative;
   }
-  .image-view{
+  .image-view {
     right: 3rem;
     left: 3rem;
+    top: 10rem;
+    bottom: 10rem;
   }
   .blog__container{
     display: flex;
