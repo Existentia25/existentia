@@ -3,7 +3,7 @@
 // Définition des constantes pour la connexion à la base de données
 const HOST = 'localhost';
 const USER = 'root';
-const PASS = 'greta';
+const PASS = '';
 const DB = 'existentia_db';
 
 try {
